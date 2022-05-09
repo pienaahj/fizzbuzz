@@ -29,3 +29,12 @@ func (s *FizzBuzzSuite) TestThreeChangedToFizz() {
 	r := fizzbuzz.Run([]int{3})
 	s.Equal([]string{"Fizz"}, r)
 }
+func (s *FizzBuzzSuite) TestThreeChangedToBuzz() {
+	r := fizzbuzz.Run([]int{5})
+	s.Equal([]string{"Buzz"}, r)
+}
+
+func (s *FizzBuzzSuite) TestThreeAndFiveChangedToBuzz() {
+	r := fizzbuzz.Run([]int{15})
+	s.Equal([]string{"FizzBuzz"}, r)
+}
