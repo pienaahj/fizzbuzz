@@ -19,3 +19,8 @@ func (s *FizzBuzzSuite) TestOneUnchanged() {
 	r := fizzbuzz.Run([]int{1})
 	s.Equal([]string{"1"}, r)
 }
+
+func (s *FizzBuzzSuite) TestTwoUnchanged() {
+	r := fizzbuzz.Run([]int{2})
+	s.Equal([]string{"2"}, r)
+}
