@@ -16,7 +16,6 @@ func Run(ints []int) []string {
 		} else {
 			strings = append(strings, fmt.Sprint(i))
 		}
-
 	}
 	return strings
 }
